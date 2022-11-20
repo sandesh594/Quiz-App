@@ -13,7 +13,7 @@ const Quiz=()=>{
     
 
     const nextQuestion=()=>{
-      if(Questions[currQuestion].answer==optionChosen){
+      if(Questions[currQuestion].answer===optionChosen){
         setScore(score+1)
       }
 
@@ -22,7 +22,7 @@ const Quiz=()=>{
     }
 
     const finishQuiz=()=>{
-      if(Questions[currQuestion].answer==optionChosen){
+      if(Questions[currQuestion].answer===optionChosen){
         setScore(score+1)
       }
       setGameState('endScreen')
@@ -41,7 +41,7 @@ const Quiz=()=>{
 
 
           </div>
-          {currQuestion==Questions.length-1?<button onClick={finishQuiz}>Finish Quiz</button>:<button onClick={nextQuestion}>Next Question</button>}
+          {currQuestion===Questions.length-1?<button onClick={finishQuiz}>Finish Quiz</button>:<button style={{fontWeight: 'bold'}} onClick={nextQuestion}>Next Question</button>}
           
         </div>
     )

@@ -85,7 +85,7 @@ const Questions=[
     {
         promp:'How many breaths does the human body take daily ?',
         OptionA:'20000',
-        OptionB:'15000',
+        OptionB:'1000',
         OptionC:'7000',
         OptionD:'4562',
         answer:'A'
